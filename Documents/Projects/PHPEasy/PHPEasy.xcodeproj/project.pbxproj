@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80855EEF157DF0B100B12546 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80855EEE157DF0B100B12546 /* UIKit.framework */; };
+		80855EF1157DF0B100B12546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80855EF0157DF0B100B12546 /* Foundation.framework */; };
+		80855EF3157DF0B100B12546 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80855EF2157DF0B100B12546 /* CoreGraphics.framework */; };
+		80855EF9157DF0B100B12546 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80855EF7157DF0B100B12546 /* InfoPlist.strings */; };
+		80855EFB157DF0B100B12546 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80855EFA157DF0B100B12546 /* main.m */; };
+		80855EFF157DF0B100B12546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80855EFE157DF0B100B12546 /* AppDelegate.m */; };
+		80855F02157DF0B100B12546 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80855F00157DF0B100B12546 /* MainStoryboard.storyboard */; };
+		80855F05157DF0B100B12546 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80855F04157DF0B100B12546 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80855EEA157DF0B100B12546 /* PHPEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80855EEE157DF0B100B12546 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80855EF0157DF0B100B12546 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80855EF2157DF0B100B12546 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80855EF6157DF0B100B12546 /* PHPEasy-Info.plist */ = {isa = PBXFileReference; path = "PHPEasy-Info.plist"; sourceTree = "<group>"; };
+		80855EF8157DF0B100B12546 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80855EFA157DF0B100B12546 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80855EFC157DF0B100B12546 /* PHPEasy-Prefix.pch */ = {isa = PBXFileReference; path = "PHPEasy-Prefix.pch"; sourceTree = "<group>"; };
+		80855EFD157DF0B100B12546 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		80855EFE157DF0B100B12546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80855F01157DF0B100B12546 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		80855F03157DF0B100B12546 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		80855F04157DF0B100B12546 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80855EE7157DF0B100B12546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80855EEF157DF0B100B12546 /* UIKit.framework in Frameworks */,
+				80855EF1157DF0B100B12546 /* Foundation.framework in Frameworks */,
+				80855EF3157DF0B100B12546 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80855EDF157DF0B000B12546 = {
+			isa = PBXGroup;
+			children = (
+				80855EF4157DF0B100B12546 /* PHPEasy */,
+				80855EED157DF0B100B12546 /* Frameworks */,
+				80855EEB157DF0B100B12546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80855EEB157DF0B100B12546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80855EEA157DF0B100B12546 /* PHPEasy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80855EED157DF0B100B12546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80855EEE157DF0B100B12546 /* UIKit.framework */,
+				80855EF0157DF0B100B12546 /* Foundation.framework */,
+				80855EF2157DF0B100B12546 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80855EF4157DF0B100B12546 /* PHPEasy */ = {
+			isa = PBXGroup;
+			children = (
+				80855EFD157DF0B100B12546 /* AppDelegate.h */,
+				80855EFE157DF0B100B12546 /* AppDelegate.m */,
+				80855F00157DF0B100B12546 /* MainStoryboard.storyboard */,
+				80855F03157DF0B100B12546 /* ViewController.h */,
+				80855F04157DF0B100B12546 /* ViewController.m */,
+				80855EF5157DF0B100B12546 /* Supporting Files */,
+			);
+			path = PHPEasy;
+			sourceTree = "<group>";
+		};
+		80855EF5157DF0B100B12546 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80855EF6157DF0B100B12546 /* PHPEasy-Info.plist */,
+				80855EF7157DF0B100B12546 /* InfoPlist.strings */,
+				80855EFA157DF0B100B12546 /* main.m */,
+				80855EFC157DF0B100B12546 /* PHPEasy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80855EE9157DF0B100B12546 /* PHPEasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80855F08157DF0B200B12546 /* Build configuration list for PBXNativeTarget "PHPEasy" */;
+			buildPhases = (
+				80855EE6157DF0B100B12546 /* Sources */,
+				80855EE7157DF0B100B12546 /* Frameworks */,
+				80855EE8157DF0B100B12546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHPEasy;
+			productName = PHPEasy;
+			productReference = 80855EEA157DF0B100B12546 /* PHPEasy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80855EE1157DF0B000B12546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 80855EE4157DF0B000B12546 /* Build configuration list for PBXProject "PHPEasy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80855EDF157DF0B000B12546;
+			productRefGroup = 80855EEB157DF0B100B12546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80855EE9157DF0B100B12546 /* PHPEasy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80855EE8157DF0B100B12546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80855EF9157DF0B100B12546 /* InfoPlist.strings in Resources */,
+				80855F02157DF0B100B12546 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80855EE6157DF0B100B12546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80855EFB157DF0B100B12546 /* main.m in Sources */,
+				80855EFF157DF0B100B12546 /* AppDelegate.m in Sources */,
+				80855F05157DF0B100B12546 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80855EF7157DF0B100B12546 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80855EF8157DF0B100B12546 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80855F00157DF0B100B12546 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80855F01157DF0B100B12546 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80855F06157DF0B100B12546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80855F07157DF0B200B12546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80855F09157DF0B200B12546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHPEasy/PHPEasy-Prefix.pch";
+				INFOPLIST_FILE = "PHPEasy/PHPEasy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80855F0A157DF0B200B12546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHPEasy/PHPEasy-Prefix.pch";
+				INFOPLIST_FILE = "PHPEasy/PHPEasy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80855EE4157DF0B000B12546 /* Build configuration list for PBXProject "PHPEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80855F06157DF0B100B12546 /* Debug */,
+				80855F07157DF0B200B12546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80855F08157DF0B200B12546 /* Build configuration list for PBXNativeTarget "PHPEasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80855F09157DF0B200B12546 /* Debug */,
+				80855F0A157DF0B200B12546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80855EE1157DF0B000B12546 /* Project object */;
+}

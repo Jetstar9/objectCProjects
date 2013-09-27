@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80BB84E2151421C200FD3617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB84E1151421C200FD3617 /* UIKit.framework */; };
+		80BB84E4151421C200FD3617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB84E3151421C200FD3617 /* Foundation.framework */; };
+		80BB84E6151421C200FD3617 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB84E5151421C200FD3617 /* CoreGraphics.framework */; };
+		80BB84EC151421C200FD3617 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80BB84EA151421C200FD3617 /* InfoPlist.strings */; };
+		80BB84EE151421C200FD3617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB84ED151421C200FD3617 /* main.m */; };
+		80BB84F2151421C200FD3617 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB84F1151421C200FD3617 /* AppDelegate.m */; };
+		80BB84F5151421C200FD3617 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BB84F3151421C200FD3617 /* MainStoryboard_iPhone.storyboard */; };
+		80BB84F8151421C200FD3617 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BB84F6151421C200FD3617 /* MainStoryboard_iPad.storyboard */; };
+		80BB84FB151421C200FD3617 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB84FA151421C200FD3617 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80BB84DD151421C200FD3617 /* QuitSmokingWhileSmoking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuitSmokingWhileSmoking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BB84E1151421C200FD3617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80BB84E3151421C200FD3617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80BB84E5151421C200FD3617 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80BB84E9151421C200FD3617 /* QuitSmokingWhileSmoking-Info.plist */ = {isa = PBXFileReference; path = "QuitSmokingWhileSmoking-Info.plist"; sourceTree = "<group>"; };
+		80BB84EB151421C200FD3617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80BB84ED151421C200FD3617 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80BB84EF151421C200FD3617 /* QuitSmokingWhileSmoking-Prefix.pch */ = {isa = PBXFileReference; path = "QuitSmokingWhileSmoking-Prefix.pch"; sourceTree = "<group>"; };
+		80BB84F0151421C200FD3617 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		80BB84F1151421C200FD3617 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80BB84F4151421C200FD3617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		80BB84F7151421C200FD3617 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		80BB84F9151421C200FD3617 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		80BB84FA151421C200FD3617 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80BB84DA151421C200FD3617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB84E2151421C200FD3617 /* UIKit.framework in Frameworks */,
+				80BB84E4151421C200FD3617 /* Foundation.framework in Frameworks */,
+				80BB84E6151421C200FD3617 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80BB84D2151421C100FD3617 = {
+			isa = PBXGroup;
+			children = (
+				80BB84E7151421C200FD3617 /* QuitSmokingWhileSmoking */,
+				80BB84E0151421C200FD3617 /* Frameworks */,
+				80BB84DE151421C200FD3617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80BB84DE151421C200FD3617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80BB84DD151421C200FD3617 /* QuitSmokingWhileSmoking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80BB84E0151421C200FD3617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80BB84E1151421C200FD3617 /* UIKit.framework */,
+				80BB84E3151421C200FD3617 /* Foundation.framework */,
+				80BB84E5151421C200FD3617 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80BB84E7151421C200FD3617 /* QuitSmokingWhileSmoking */ = {
+			isa = PBXGroup;
+			children = (
+				80BB84F0151421C200FD3617 /* AppDelegate.h */,
+				80BB84F1151421C200FD3617 /* AppDelegate.m */,
+				80BB84F3151421C200FD3617 /* MainStoryboard_iPhone.storyboard */,
+				80BB84F6151421C200FD3617 /* MainStoryboard_iPad.storyboard */,
+				80BB84F9151421C200FD3617 /* ViewController.h */,
+				80BB84FA151421C200FD3617 /* ViewController.m */,
+				80BB84E8151421C200FD3617 /* Supporting Files */,
+			);
+			path = QuitSmokingWhileSmoking;
+			sourceTree = "<group>";
+		};
+		80BB84E8151421C200FD3617 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80BB84E9151421C200FD3617 /* QuitSmokingWhileSmoking-Info.plist */,
+				80BB84EA151421C200FD3617 /* InfoPlist.strings */,
+				80BB84ED151421C200FD3617 /* main.m */,
+				80BB84EF151421C200FD3617 /* QuitSmokingWhileSmoking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80BB84DC151421C200FD3617 /* QuitSmokingWhileSmoking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BB84FE151421C200FD3617 /* Build configuration list for PBXNativeTarget "QuitSmokingWhileSmoking" */;
+			buildPhases = (
+				80BB84D9151421C200FD3617 /* Sources */,
+				80BB84DA151421C200FD3617 /* Frameworks */,
+				80BB84DB151421C200FD3617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuitSmokingWhileSmoking;
+			productName = QuitSmokingWhileSmoking;
+			productReference = 80BB84DD151421C200FD3617 /* QuitSmokingWhileSmoking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80BB84D4151421C100FD3617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 80BB84D7151421C100FD3617 /* Build configuration list for PBXProject "QuitSmokingWhileSmoking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80BB84D2151421C100FD3617;
+			productRefGroup = 80BB84DE151421C200FD3617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80BB84DC151421C200FD3617 /* QuitSmokingWhileSmoking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80BB84DB151421C200FD3617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB84EC151421C200FD3617 /* InfoPlist.strings in Resources */,
+				80BB84F5151421C200FD3617 /* MainStoryboard_iPhone.storyboard in Resources */,
+				80BB84F8151421C200FD3617 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80BB84D9151421C200FD3617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BB84EE151421C200FD3617 /* main.m in Sources */,
+				80BB84F2151421C200FD3617 /* AppDelegate.m in Sources */,
+				80BB84FB151421C200FD3617 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80BB84EA151421C200FD3617 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BB84EB151421C200FD3617 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80BB84F3151421C200FD3617 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BB84F4151421C200FD3617 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		80BB84F6151421C200FD3617 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BB84F7151421C200FD3617 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80BB84FC151421C200FD3617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BB84FD151421C200FD3617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80BB84FF151421C200FD3617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuitSmokingWhileSmoking/QuitSmokingWhileSmoking-Prefix.pch";
+				INFOPLIST_FILE = "QuitSmokingWhileSmoking/QuitSmokingWhileSmoking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80BB8500151421C200FD3617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuitSmokingWhileSmoking/QuitSmokingWhileSmoking-Prefix.pch";
+				INFOPLIST_FILE = "QuitSmokingWhileSmoking/QuitSmokingWhileSmoking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80BB84D7151421C100FD3617 /* Build configuration list for PBXProject "QuitSmokingWhileSmoking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BB84FC151421C200FD3617 /* Debug */,
+				80BB84FD151421C200FD3617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BB84FE151421C200FD3617 /* Build configuration list for PBXNativeTarget "QuitSmokingWhileSmoking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BB84FF151421C200FD3617 /* Debug */,
+				80BB8500151421C200FD3617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80BB84D4151421C100FD3617 /* Project object */;
+}

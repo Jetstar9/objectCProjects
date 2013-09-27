@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8084A3A514E8AB5A00D15953 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8084A3A414E8AB5A00D15953 /* UIKit.framework */; };
+		8084A3A714E8AB5A00D15953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8084A3A614E8AB5A00D15953 /* Foundation.framework */; };
+		8084A3A914E8AB5A00D15953 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8084A3A814E8AB5A00D15953 /* CoreGraphics.framework */; };
+		8084A3AF14E8AB5A00D15953 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8084A3AD14E8AB5A00D15953 /* InfoPlist.strings */; };
+		8084A3B114E8AB5A00D15953 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8084A3B014E8AB5A00D15953 /* main.m */; };
+		8084A3B514E8AB5A00D15953 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8084A3B414E8AB5A00D15953 /* AppDelegate.m */; };
+		8084A3B814E8AB5A00D15953 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8084A3B614E8AB5A00D15953 /* MainStoryboard.storyboard */; };
+		8084A3BB14E8AB5B00D15953 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8084A3BA14E8AB5B00D15953 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8084A3A014E8AB5A00D15953 /* valentinesDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valentinesDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8084A3A414E8AB5A00D15953 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8084A3A614E8AB5A00D15953 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8084A3A814E8AB5A00D15953 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8084A3AC14E8AB5A00D15953 /* valentinesDay-Info.plist */ = {isa = PBXFileReference; path = "valentinesDay-Info.plist"; sourceTree = "<group>"; };
+		8084A3AE14E8AB5A00D15953 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8084A3B014E8AB5A00D15953 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8084A3B214E8AB5A00D15953 /* valentinesDay-Prefix.pch */ = {isa = PBXFileReference; path = "valentinesDay-Prefix.pch"; sourceTree = "<group>"; };
+		8084A3B314E8AB5A00D15953 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8084A3B414E8AB5A00D15953 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8084A3B714E8AB5A00D15953 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8084A3B914E8AB5B00D15953 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		8084A3BA14E8AB5B00D15953 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8084A39D14E8AB5A00D15953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8084A3A514E8AB5A00D15953 /* UIKit.framework in Frameworks */,
+				8084A3A714E8AB5A00D15953 /* Foundation.framework in Frameworks */,
+				8084A3A914E8AB5A00D15953 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8084A39514E8AB5A00D15953 = {
+			isa = PBXGroup;
+			children = (
+				8084A3AA14E8AB5A00D15953 /* valentinesDay */,
+				8084A3A314E8AB5A00D15953 /* Frameworks */,
+				8084A3A114E8AB5A00D15953 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8084A3A114E8AB5A00D15953 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8084A3A014E8AB5A00D15953 /* valentinesDay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8084A3A314E8AB5A00D15953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8084A3A414E8AB5A00D15953 /* UIKit.framework */,
+				8084A3A614E8AB5A00D15953 /* Foundation.framework */,
+				8084A3A814E8AB5A00D15953 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8084A3AA14E8AB5A00D15953 /* valentinesDay */ = {
+			isa = PBXGroup;
+			children = (
+				8084A3B314E8AB5A00D15953 /* AppDelegate.h */,
+				8084A3B414E8AB5A00D15953 /* AppDelegate.m */,
+				8084A3B614E8AB5A00D15953 /* MainStoryboard.storyboard */,
+				8084A3B914E8AB5B00D15953 /* ViewController.h */,
+				8084A3BA14E8AB5B00D15953 /* ViewController.m */,
+				8084A3AB14E8AB5A00D15953 /* Supporting Files */,
+			);
+			path = valentinesDay;
+			sourceTree = "<group>";
+		};
+		8084A3AB14E8AB5A00D15953 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8084A3AC14E8AB5A00D15953 /* valentinesDay-Info.plist */,
+				8084A3AD14E8AB5A00D15953 /* InfoPlist.strings */,
+				8084A3B014E8AB5A00D15953 /* main.m */,
+				8084A3B214E8AB5A00D15953 /* valentinesDay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8084A39F14E8AB5A00D15953 /* valentinesDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8084A3BE14E8AB5B00D15953 /* Build configuration list for PBXNativeTarget "valentinesDay" */;
+			buildPhases = (
+				8084A39C14E8AB5A00D15953 /* Sources */,
+				8084A39D14E8AB5A00D15953 /* Frameworks */,
+				8084A39E14E8AB5A00D15953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = valentinesDay;
+			productName = valentinesDay;
+			productReference = 8084A3A014E8AB5A00D15953 /* valentinesDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8084A39714E8AB5A00D15953 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8084A39A14E8AB5A00D15953 /* Build configuration list for PBXProject "valentinesDay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8084A39514E8AB5A00D15953;
+			productRefGroup = 8084A3A114E8AB5A00D15953 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8084A39F14E8AB5A00D15953 /* valentinesDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8084A39E14E8AB5A00D15953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8084A3AF14E8AB5A00D15953 /* InfoPlist.strings in Resources */,
+				8084A3B814E8AB5A00D15953 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8084A39C14E8AB5A00D15953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8084A3B114E8AB5A00D15953 /* main.m in Sources */,
+				8084A3B514E8AB5A00D15953 /* AppDelegate.m in Sources */,
+				8084A3BB14E8AB5B00D15953 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8084A3AD14E8AB5A00D15953 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8084A3AE14E8AB5A00D15953 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8084A3B614E8AB5A00D15953 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8084A3B714E8AB5A00D15953 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8084A3BC14E8AB5B00D15953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8084A3BD14E8AB5B00D15953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8084A3BF14E8AB5B00D15953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "valentinesDay/valentinesDay-Prefix.pch";
+				INFOPLIST_FILE = "valentinesDay/valentinesDay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8084A3C014E8AB5B00D15953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "valentinesDay/valentinesDay-Prefix.pch";
+				INFOPLIST_FILE = "valentinesDay/valentinesDay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8084A39A14E8AB5A00D15953 /* Build configuration list for PBXProject "valentinesDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8084A3BC14E8AB5B00D15953 /* Debug */,
+				8084A3BD14E8AB5B00D15953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8084A3BE14E8AB5B00D15953 /* Build configuration list for PBXNativeTarget "valentinesDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8084A3BF14E8AB5B00D15953 /* Debug */,
+				8084A3C014E8AB5B00D15953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8084A39714E8AB5A00D15953 /* Project object */;
+}

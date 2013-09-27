@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="t4U-x7-1tK">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="Spw-bk-Ogj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNU-Y3-maT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="G1K-0L-aCs" customClass="BirdCreationViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ql9-f1-peJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="G1K-0L-aCs" id="ZEb-qV-MF3"/>
+                            <outlet property="delegate" destination="G1K-0L-aCs" id="L3Q-5o-sI2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Bird" id="pdt-Ti-dSq" customClass="IBNavigationItem">
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="zIr-aC-FbF" customClass="IBNavigationBarButtonItem">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="uniqueIdentifier" value="RegisterButton"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="destinationControllerName" value="BirdGatheringViewController"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="parentController" destination="G1K-0L-aCs" id="CbJ-DS-PoV"/>
+                                <segue destination="ss6-8f-7wa" kind="push" identifier="LoginDone" id="NPC-3D-Ees"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rightButton" destination="zIr-aC-FbF" id="n2f-SG-W1N"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="565" y="94"/>
+        </scene>
+        <scene sceneID="reG-z0-zYk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8b-Np-b22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="BirdGatheringViewController" id="ss6-8f-7wa" customClass="BirdGatheringViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohk-2k-kuD">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="5P2-JT-bu0">
+                                <rect key="frame" x="0.0" y="29" width="320" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ss6-8f-7wa" id="cLj-ek-rIY"/>
+                                </connections>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GatheringTopBar.png" id="QxO-Li-R0h">
+                                <rect key="frame" x="0.0" y="-10" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="PWy-MG-xlQ">
+                                <rect key="frame" x="42" y="300" width="233" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" image="StatusBarGathering.png" id="v5E-0B-Ep2">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Food.png" id="DaI-0L-lDd">
+                                        <rect key="frame" x="13" y="5" width="28" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Gold.png" id="Suu-LD-VDQ">
+                                        <rect key="frame" x="78" y="-4" width="36" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jLz-sO-swW">
+                                        <rect key="frame" x="160" y="8" width="62" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                        <state key="normal" title="GOLD" backgroundImage="BuyGoldFromGatheringScreen.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="OVk-M5-DmU" kind="custom" identifier="GoldBuy" customClass="AdyModalPopUpStoryboardSegue" id="BTL-1c-G0J"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" minimumFontSize="10" id="dNx-mH-SMD">
+                                        <rect key="frame" x="116" y="8" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" minimumFontSize="10" id="adx-in-Jk2">
+                                        <rect key="frame" x="43" y="8" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="HiG-Md-K5A" customClass="IBProgressBar">
+                                <rect key="frame" x="84" y="10" width="230" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="pTQ-9w-Tlk">
+                                <rect key="frame" x="0.0" y="357" width="320" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="IBTabBar.png" id="cuX-bC-nBY">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SoV-b1-qI5">
+                                        <rect key="frame" x="224" y="14" width="77" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="TabPigeonSel.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hbv-IJ-RWQ">
+                                        <rect key="frame" x="20" y="14" width="77" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                                        <state key="normal" image="TabPics.png">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="7MU-TN-qQb" kind="push" id="B5v-2G-hFO"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="TabPicsBadge.png" id="rBa-8Q-cJB">
+                                        <rect key="frame" x="24" y="3" width="38" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qrm-X0-4pc">
+                                        <rect key="frame" x="110" y="3" width="98" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="center"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToCaptureScreen:" destination="ss6-8f-7wa" eventType="touchUpInside" id="cTG-H2-61k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lady Gaga" id="kJs-eV-UgZ" customClass="IBNavigationItem"/>
+                    <connections>
+                        <outlet property="food" destination="adx-in-Jk2" id="rkw-om-Ncj"/>
+                        <outlet property="gold" destination="dNx-mH-SMD" id="axA-YL-0OU"/>
+                        <outlet property="mapView" destination="5P2-JT-bu0" id="AMC-Th-JlS"/>
+                        <outlet property="progress" destination="HiG-Md-K5A" id="lKh-6j-8JA"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1016" y="94"/>
+        </scene>
+        <scene sceneID="qGV-Cf-SKn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CI0-og-Pbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="7MU-TN-qQb" customClass="BirdPhotosViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzl-c9-oLO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="nlz-qm-LuO">
+                                <rect key="frame" x="0.0" y="357" width="320" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="IBTabBar.png" id="Q9s-dp-Ppb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FbG-aP-8ko">
+                                        <rect key="frame" x="224" y="14" width="77" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="TabPigeonSel.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ly9-jE-uet">
+                                        <rect key="frame" x="20" y="14" width="77" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                                        <state key="normal" image="TabPics.png">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jrw-fJ-f8M">
+                                        <rect key="frame" x="110" y="3" width="98" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="center"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToCaptureScreen:" destination="ss6-8f-7wa" eventType="touchUpInside" id="gjG-DK-i6q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WK4-Xm-NOc"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1724" y="94"/>
+        </scene>
+        <scene sceneID="vCw-4c-IQb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gQ-Lt-CJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="BirdCaptureViewController" modalTransitionStyle="crossDissolve" id="9P4-jM-CoK" customClass="BirdCaptureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W2h-iU-dE2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-151" y="944"/>
+        </scene>
+        <scene sceneID="lDe-7q-Dvh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xb-NQ-ksN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="zMg-Rr-hmW" customClass="BirdTravelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nQC-9u-50M">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="HS9-3s-cYn">
+                                <rect key="frame" x="0.0" y="74" width="320" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zMg-Rr-hmW" id="rGJ-os-coa"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" id="EQr-g6-dfA">
+                                <rect key="frame" x="0.0" y="378" width="320" height="82"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="JourneyTabBarBackground.png" id="fge-Qh-FVW">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max Distance" lineBreakMode="tailTruncation" minimumFontSize="10" id="gjf-Sc-CUC">
+                                        <rect key="frame" x="8" y="13" width="111" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="14"/>
+                                        <color key="textColor" red="0.62352941176470589" green="0.59607843137254901" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Speed" lineBreakMode="tailTruncation" minimumFontSize="10" id="IP3-6U-Oio">
+                                        <rect key="frame" x="181" y="13" width="60" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="14"/>
+                                        <color key="textColor" red="0.62352941176470589" green="0.59607843137254901" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6000 km" lineBreakMode="tailTruncation" minimumFontSize="10" id="ju8-s8-vNl">
+                                        <rect key="frame" x="100" y="14" width="85" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.15294117647058825" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="300 km/h" lineBreakMode="tailTruncation" minimumFontSize="10" id="AQ4-LG-lcv">
+                                        <rect key="frame" x="229" y="14" width="83" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.1529411765" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ini-JE-Y5c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="JourneyTopBarBackground.png" id="Xek-zb-tSK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="JourneyProgressBar.png" id="PET-sQ-LyA">
+                                        <rect key="frame" x="72" y="7" width="176" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level 1" lineBreakMode="tailTruncation" minimumFontSize="10" id="OJX-Ru-28r">
+                                        <rect key="frame" x="16" y="4" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="12"/>
+                                        <color key="textColor" red="0.20784313725490194" green="0.15294117647058825" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level 2" lineBreakMode="tailTruncation" minimumFontSize="10" id="tBB-lj-221">
+                                        <rect key="frame" x="264" y="4" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="12"/>
+                                        <color key="textColor" red="0.4477696572580645" green="0.40439138104838712" blue="0.29857610887096775" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drag the pin anywhere within the circle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" minimumFontSize="10" id="fP3-Pi-rgx">
+                                <rect key="frame" x="45" y="323" width="231" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Journey" id="9A2-sK-678">
+                        <barButtonItem key="rightBarButtonItem" title="Travel" id="x6A-Mf-wlo">
+                            <connections>
+                                <segue destination="AqF-ou-h6u" kind="custom" customClass="UIStoryboardPopoverSegue" id="4U9-pQ-BP3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="distanceLabel" destination="ju8-s8-vNl" id="JSg-ov-P6o"/>
+                        <outlet property="distanceNoteLabel" destination="gjf-Sc-CUC" id="B8u-9x-GrM"/>
+                        <outlet property="mapView" destination="HS9-3s-cYn" id="6rI-47-ZCQ"/>
+                        <outlet property="speedLabel" destination="AQ4-LG-lcv" id="KDi-il-uHf"/>
+                        <outlet property="speedNoteLabel" destination="IP3-6U-Oio" id="a0H-FL-h7R"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="460" y="861"/>
+        </scene>
+        <scene sceneID="Pb3-H8-m61">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gP-1T-qPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="AqF-ou-h6u" customClass="BirdSendOnTripViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jg0-7B-K7m">
+                        <rect key="frame" x="0.0" y="20" width="269" height="194"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="97a-SN-3sd">
+                                <rect key="frame" x="67" y="49" width="135" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PopUpGreyBackground.png" id="kyd-yS-ZMq">
+                                <rect key="frame" x="0.0" y="0.0" width="269" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do you want to send Lady Gaga to Nagpur, India ( 500 km )" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" id="sZa-Xm-rlW">
+                                <rect key="frame" x="20" y="20" width="229" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.15294117647058825" blue="0.10980392156862745" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9I7-eC-Hhd">
+                                <rect key="frame" x="20" y="105" width="112" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <state key="normal" title="No" backgroundImage="PopUpDismissButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelTrip:" destination="AqF-ou-h6u" eventType="touchUpInside" id="kBy-SC-1vC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7iJ-zt-Srw">
+                                <rect key="frame" x="139" y="105" width="112" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <state key="normal" title="Food" backgroundImage="PopUpWhiteButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTrip:" destination="AqF-ou-h6u" eventType="touchUpInside" id="aRq-ky-7B0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bird Food" lineBreakMode="tailTruncation" minimumFontSize="10" id="9M2-wE-39G">
+                                <rect key="frame" x="93" y="153" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" red="0.20392156862745098" green="0.15294117647058825" blue="0.10980392156862745" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="birdsFoodLabel" destination="9M2-wE-39G" id="W9r-ud-nmV"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="950" y="914"/>
+        </scene>
+        <scene sceneID="dWJ-8x-oBr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHd-nb-bCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="a9R-RA-eFK" customClass="UserInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="euG-3E-FTC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WKi-Qa-m0u">
+                                <rect key="frame" x="20" y="20" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="AvatarBorder.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H8W-sn-7vB">
+                                <rect key="frame" x="9" y="358" width="302" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Delete Account" backgroundImage="DeleteButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Vwu-e1-YtU">
+                                <rect key="frame" x="109" y="14" width="202" height="81"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <sections/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Moy-6X-rPT">
+                                <rect key="frame" x="20" y="118" width="291" height="232"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QMv-FJ-vp6"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1272" y="1102"/>
+        </scene>
+        <scene sceneID="4Ul-Uu-MS9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DhM-2h-GcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OVk-M5-DmU" customClass="BirdRushViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AfD-Fk-B01">
+                        <rect key="frame" x="0.0" y="20" width="269" height="193"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PopOverBackground.png" id="p19-gn-Use">
+                                <rect key="frame" x="0.0" y="0.0" width="269" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hurry up the Food Gathering so Lady Gaga can take the next Journey?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" id="UlU-eI-k7T">
+                                <rect key="frame" x="20" y="6" width="231" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GoldTokenNoShine@2x.png" id="Kjb-lZ-0sa">
+                                <rect key="frame" x="76" y="94" width="17" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" text="Costs 6 Gold" lineBreakMode="tailTruncation" minimumFontSize="10" id="no2-VL-6JA">
+                                <rect key="frame" x="98" y="91" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7kX-PW-s5y">
+                                <rect key="frame" x="21" y="129" width="72" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <state key="normal" title="No" backgroundImage="PushButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelHurry:" destination="OVk-M5-DmU" eventType="touchUpInside" id="nFH-76-oOJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yB3-jb-mXa">
+                                <rect key="frame" x="98" y="129" width="72" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <state key="normal" title="Buy Gold" backgroundImage="PushButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyGold:" destination="OVk-M5-DmU" eventType="touchUpInside" id="aYf-IW-FPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eHJ-XN-fRP">
+                                <rect key="frame" x="178" y="129" width="72" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                <state key="normal" title="Yes" backgroundImage="PushButtonDismiss.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rushBird:" destination="OVk-M5-DmU" eventType="touchUpInside" id="9fc-I4-fSU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="goldLabel" destination="no2-VL-6JA" id="5uY-ZN-KUh"/>
+                        <outlet property="rushButton" destination="eHJ-XN-fRP" id="QkR-0x-BTh"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1285" y="729"/>
+        </scene>
+        <scene sceneID="Sdu-a4-t9x">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8HX-Y8-EMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="t4U-x7-1tK" customClass="IBNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Bo5-4C-7NT" customClass="IBNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G1K-0L-aCs" kind="relationship" relationship="rootViewController" id="9XD-oL-ScP"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="128" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AvatarBorder.png" width="75" height="75"/>
+        <image name="BuyGoldFromGatheringScreen.png" width="62" height="22"/>
+        <image name="DeleteButton.png" width="302" height="47"/>
+        <image name="Food.png" width="28" height="28"/>
+        <image name="GatheringTopBar.png" width="320" height="45"/>
+        <image name="Gold.png" width="36" height="36"/>
+        <image name="GoldTokenNoShine@2x.png" width="34" height="32"/>
+        <image name="IBTabBar.png" width="320" height="59"/>
+        <image name="JourneyProgressBar.png" width="176" height="16"/>
+        <image name="JourneyTabBarBackground.png" width="320" height="38"/>
+        <image name="JourneyTopBarBackground.png" width="320" height="35"/>
+        <image name="PopOverBackground.png" width="269" height="194"/>
+        <image name="PopUpDismissButton.png" width="112" height="42"/>
+        <image name="PopUpGreyBackground.png" width="269" height="194"/>
+        <image name="PopUpWhiteButton.png" width="112" height="42"/>
+        <image name="PushButton.png" width="72" height="42"/>
+        <image name="PushButtonDismiss.png" width="72" height="42"/>
+        <image name="StatusBarGathering.png" width="233" height="38"/>
+        <image name="TabPics.png" width="35" height="27"/>
+        <image name="TabPicsBadge.png" width="38" height="31"/>
+        <image name="TabPigeonSel.png" width="77" height="44"/>
+    </resources>
+    <classes>
+        <class className="BirdCaptureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdCaptureViewController.h"/>
+        </class>
+        <class className="BirdCreationViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdCreationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="createBird:"/>
+            </relationships>
+        </class>
+        <class className="BirdGatheringViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdGatheringViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goToCaptureScreen:"/>
+                <relationship kind="action" name="goToImages:"/>
+                <relationship kind="outlet" name="food" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="gold" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="progress" candidateClass="IBProgressBar"/>
+            </relationships>
+        </class>
+        <class className="BirdPhotosViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdPhotosViewController.h"/>
+        </class>
+        <class className="BirdRushViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdRushViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buyGold:"/>
+                <relationship kind="action" name="cancelHurry:"/>
+                <relationship kind="action" name="rushBird:"/>
+                <relationship kind="outlet" name="goldLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rushButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="BirdSendOnTripViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdSendOnTripViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelTrip:"/>
+                <relationship kind="action" name="startTrip:"/>
+                <relationship kind="outlet" name="birdsFoodLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BirdTravelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BirdTravelViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="distanceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="distanceNoteLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="speedLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="speedNoteLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IBNavigationBar" superclassName="UINavigationBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBNavigationBar.h"/>
+        </class>
+        <class className="IBNavigationBarButtonItem" superclassName="UIBarButtonItem">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBNavigationBarButtonItem.h"/>
+            <relationships>
+                <relationship kind="outlet" name="parentController" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+        <class className="IBNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBNavigationController.h"/>
+        </class>
+        <class className="IBNavigationItem" superclassName="UINavigationItem">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBNavigationItem.h"/>
+        </class>
+        <class className="IBProgressBar" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBProgressBar.h"/>
+        </class>
+        <class className="UserInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UserInfoViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

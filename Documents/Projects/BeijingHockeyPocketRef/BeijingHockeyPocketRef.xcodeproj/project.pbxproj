@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80162FA01563B72B006C513A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80162F9F1563B72B006C513A /* UIKit.framework */; };
+		80162FA21563B72B006C513A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80162FA11563B72B006C513A /* Foundation.framework */; };
+		80162FA41563B72B006C513A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80162FA31563B72B006C513A /* CoreGraphics.framework */; };
+		80162FAA1563B72B006C513A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80162FA81563B72B006C513A /* InfoPlist.strings */; };
+		80162FAC1563B72B006C513A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80162FAB1563B72B006C513A /* main.m */; };
+		80162FB01563B72B006C513A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80162FAF1563B72B006C513A /* AppDelegate.m */; };
+		80162FB31563B72B006C513A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80162FB11563B72B006C513A /* MainStoryboard_iPhone.storyboard */; };
+		80162FB61563B72B006C513A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80162FB41563B72B006C513A /* MainStoryboard_iPad.storyboard */; };
+		80162FB91563B72B006C513A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80162FB81563B72B006C513A /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80162F9B1563B72B006C513A /* BeijingHockeyPocketRef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeijingHockeyPocketRef.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80162F9F1563B72B006C513A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80162FA11563B72B006C513A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80162FA31563B72B006C513A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80162FA71563B72B006C513A /* BeijingHockeyPocketRef-Info.plist */ = {isa = PBXFileReference; path = "BeijingHockeyPocketRef-Info.plist"; sourceTree = "<group>"; };
+		80162FA91563B72B006C513A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80162FAB1563B72B006C513A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80162FAD1563B72B006C513A /* BeijingHockeyPocketRef-Prefix.pch */ = {isa = PBXFileReference; path = "BeijingHockeyPocketRef-Prefix.pch"; sourceTree = "<group>"; };
+		80162FAE1563B72B006C513A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		80162FAF1563B72B006C513A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80162FB21563B72B006C513A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		80162FB51563B72B006C513A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		80162FB71563B72B006C513A /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		80162FB81563B72B006C513A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80162F981563B72B006C513A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80162FA01563B72B006C513A /* UIKit.framework in Frameworks */,
+				80162FA21563B72B006C513A /* Foundation.framework in Frameworks */,
+				80162FA41563B72B006C513A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80162F901563B72A006C513A = {
+			isa = PBXGroup;
+			children = (
+				80162FA51563B72B006C513A /* BeijingHockeyPocketRef */,
+				80162F9E1563B72B006C513A /* Frameworks */,
+				80162F9C1563B72B006C513A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80162F9C1563B72B006C513A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80162F9B1563B72B006C513A /* BeijingHockeyPocketRef.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80162F9E1563B72B006C513A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80162F9F1563B72B006C513A /* UIKit.framework */,
+				80162FA11563B72B006C513A /* Foundation.framework */,
+				80162FA31563B72B006C513A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80162FA51563B72B006C513A /* BeijingHockeyPocketRef */ = {
+			isa = PBXGroup;
+			children = (
+				80162FAE1563B72B006C513A /* AppDelegate.h */,
+				80162FAF1563B72B006C513A /* AppDelegate.m */,
+				80162FB11563B72B006C513A /* MainStoryboard_iPhone.storyboard */,
+				80162FB41563B72B006C513A /* MainStoryboard_iPad.storyboard */,
+				80162FB71563B72B006C513A /* ViewController.h */,
+				80162FB81563B72B006C513A /* ViewController.m */,
+				80162FA61563B72B006C513A /* Supporting Files */,
+			);
+			path = BeijingHockeyPocketRef;
+			sourceTree = "<group>";
+		};
+		80162FA61563B72B006C513A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80162FA71563B72B006C513A /* BeijingHockeyPocketRef-Info.plist */,
+				80162FA81563B72B006C513A /* InfoPlist.strings */,
+				80162FAB1563B72B006C513A /* main.m */,
+				80162FAD1563B72B006C513A /* BeijingHockeyPocketRef-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80162F9A1563B72B006C513A /* BeijingHockeyPocketRef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80162FBC1563B72B006C513A /* Build configuration list for PBXNativeTarget "BeijingHockeyPocketRef" */;
+			buildPhases = (
+				80162F971563B72B006C513A /* Sources */,
+				80162F981563B72B006C513A /* Frameworks */,
+				80162F991563B72B006C513A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeijingHockeyPocketRef;
+			productName = BeijingHockeyPocketRef;
+			productReference = 80162F9B1563B72B006C513A /* BeijingHockeyPocketRef.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80162F921563B72A006C513A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 80162F951563B72A006C513A /* Build configuration list for PBXProject "BeijingHockeyPocketRef" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80162F901563B72A006C513A;
+			productRefGroup = 80162F9C1563B72B006C513A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80162F9A1563B72B006C513A /* BeijingHockeyPocketRef */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80162F991563B72B006C513A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80162FAA1563B72B006C513A /* InfoPlist.strings in Resources */,
+				80162FB31563B72B006C513A /* MainStoryboard_iPhone.storyboard in Resources */,
+				80162FB61563B72B006C513A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80162F971563B72B006C513A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80162FAC1563B72B006C513A /* main.m in Sources */,
+				80162FB01563B72B006C513A /* AppDelegate.m in Sources */,
+				80162FB91563B72B006C513A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80162FA81563B72B006C513A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80162FA91563B72B006C513A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80162FB11563B72B006C513A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80162FB21563B72B006C513A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		80162FB41563B72B006C513A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80162FB51563B72B006C513A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80162FBA1563B72B006C513A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80162FBB1563B72B006C513A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80162FBD1563B72B006C513A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeijingHockeyPocketRef/BeijingHockeyPocketRef-Prefix.pch";
+				INFOPLIST_FILE = "BeijingHockeyPocketRef/BeijingHockeyPocketRef-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80162FBE1563B72B006C513A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeijingHockeyPocketRef/BeijingHockeyPocketRef-Prefix.pch";
+				INFOPLIST_FILE = "BeijingHockeyPocketRef/BeijingHockeyPocketRef-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80162F951563B72A006C513A /* Build configuration list for PBXProject "BeijingHockeyPocketRef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80162FBA1563B72B006C513A /* Debug */,
+				80162FBB1563B72B006C513A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80162FBC1563B72B006C513A /* Build configuration list for PBXNativeTarget "BeijingHockeyPocketRef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80162FBD1563B72B006C513A /* Debug */,
+				80162FBE1563B72B006C513A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80162F921563B72A006C513A /* Project object */;
+}

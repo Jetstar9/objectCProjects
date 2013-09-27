@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		804264FF14E8F30B0004D012 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804264FE14E8F30B0004D012 /* UIKit.framework */; };
+		8042650114E8F30B0004D012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042650014E8F30B0004D012 /* Foundation.framework */; };
+		8042650314E8F30B0004D012 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8042650214E8F30B0004D012 /* CoreGraphics.framework */; };
+		8042650914E8F30B0004D012 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8042650714E8F30B0004D012 /* InfoPlist.strings */; };
+		8042650B14E8F30B0004D012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042650A14E8F30B0004D012 /* main.m */; };
+		8042650F14E8F30B0004D012 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042650E14E8F30B0004D012 /* AppDelegate.m */; };
+		8042651214E8F30B0004D012 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8042651014E8F30B0004D012 /* MainStoryboard.storyboard */; };
+		8042651514E8F30B0004D012 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8042651414E8F30B0004D012 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		804264FA14E8F30B0004D012 /* valentines2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valentines2012.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		804264FE14E8F30B0004D012 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8042650014E8F30B0004D012 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8042650214E8F30B0004D012 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8042650614E8F30B0004D012 /* valentines2012-Info.plist */ = {isa = PBXFileReference; path = "valentines2012-Info.plist"; sourceTree = "<group>"; };
+		8042650814E8F30B0004D012 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8042650A14E8F30B0004D012 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8042650C14E8F30B0004D012 /* valentines2012-Prefix.pch */ = {isa = PBXFileReference; path = "valentines2012-Prefix.pch"; sourceTree = "<group>"; };
+		8042650D14E8F30B0004D012 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8042650E14E8F30B0004D012 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8042651114E8F30B0004D012 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8042651314E8F30B0004D012 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		8042651414E8F30B0004D012 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		804264F714E8F30B0004D012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804264FF14E8F30B0004D012 /* UIKit.framework in Frameworks */,
+				8042650114E8F30B0004D012 /* Foundation.framework in Frameworks */,
+				8042650314E8F30B0004D012 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		804264EF14E8F30B0004D012 = {
+			isa = PBXGroup;
+			children = (
+				8042650414E8F30B0004D012 /* valentines2012 */,
+				804264FD14E8F30B0004D012 /* Frameworks */,
+				804264FB14E8F30B0004D012 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		804264FB14E8F30B0004D012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804264FA14E8F30B0004D012 /* valentines2012.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804264FD14E8F30B0004D012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804264FE14E8F30B0004D012 /* UIKit.framework */,
+				8042650014E8F30B0004D012 /* Foundation.framework */,
+				8042650214E8F30B0004D012 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8042650414E8F30B0004D012 /* valentines2012 */ = {
+			isa = PBXGroup;
+			children = (
+				8042650D14E8F30B0004D012 /* AppDelegate.h */,
+				8042650E14E8F30B0004D012 /* AppDelegate.m */,
+				8042651014E8F30B0004D012 /* MainStoryboard.storyboard */,
+				8042651314E8F30B0004D012 /* ViewController.h */,
+				8042651414E8F30B0004D012 /* ViewController.m */,
+				8042650514E8F30B0004D012 /* Supporting Files */,
+			);
+			path = valentines2012;
+			sourceTree = "<group>";
+		};
+		8042650514E8F30B0004D012 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8042650614E8F30B0004D012 /* valentines2012-Info.plist */,
+				8042650714E8F30B0004D012 /* InfoPlist.strings */,
+				8042650A14E8F30B0004D012 /* main.m */,
+				8042650C14E8F30B0004D012 /* valentines2012-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		804264F914E8F30B0004D012 /* valentines2012 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8042651814E8F30B0004D012 /* Build configuration list for PBXNativeTarget "valentines2012" */;
+			buildPhases = (
+				804264F614E8F30B0004D012 /* Sources */,
+				804264F714E8F30B0004D012 /* Frameworks */,
+				804264F814E8F30B0004D012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = valentines2012;
+			productName = valentines2012;
+			productReference = 804264FA14E8F30B0004D012 /* valentines2012.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		804264F114E8F30B0004D012 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 804264F414E8F30B0004D012 /* Build configuration list for PBXProject "valentines2012" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 804264EF14E8F30B0004D012;
+			productRefGroup = 804264FB14E8F30B0004D012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				804264F914E8F30B0004D012 /* valentines2012 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		804264F814E8F30B0004D012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042650914E8F30B0004D012 /* InfoPlist.strings in Resources */,
+				8042651214E8F30B0004D012 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		804264F614E8F30B0004D012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8042650B14E8F30B0004D012 /* main.m in Sources */,
+				8042650F14E8F30B0004D012 /* AppDelegate.m in Sources */,
+				8042651514E8F30B0004D012 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8042650714E8F30B0004D012 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8042650814E8F30B0004D012 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8042651014E8F30B0004D012 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8042651114E8F30B0004D012 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8042651614E8F30B0004D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8042651714E8F30B0004D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8042651914E8F30B0004D012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "valentines2012/valentines2012-Prefix.pch";
+				INFOPLIST_FILE = "valentines2012/valentines2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8042651A14E8F30B0004D012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "valentines2012/valentines2012-Prefix.pch";
+				INFOPLIST_FILE = "valentines2012/valentines2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		804264F414E8F30B0004D012 /* Build configuration list for PBXProject "valentines2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042651614E8F30B0004D012 /* Debug */,
+				8042651714E8F30B0004D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8042651814E8F30B0004D012 /* Build configuration list for PBXNativeTarget "valentines2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8042651914E8F30B0004D012 /* Debug */,
+				8042651A14E8F30B0004D012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 804264F114E8F30B0004D012 /* Project object */;
+}

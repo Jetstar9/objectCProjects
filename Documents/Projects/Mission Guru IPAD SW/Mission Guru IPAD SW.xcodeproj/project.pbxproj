@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8001496C14C51A74001D8E38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8001496B14C51A74001D8E38 /* UIKit.framework */; };
+		8001496E14C51A74001D8E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8001496D14C51A74001D8E38 /* Foundation.framework */; };
+		8001497014C51A74001D8E38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8001496F14C51A74001D8E38 /* CoreGraphics.framework */; };
+		8001497614C51A74001D8E38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8001497414C51A74001D8E38 /* InfoPlist.strings */; };
+		8001497814C51A74001D8E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001497714C51A74001D8E38 /* main.m */; };
+		8001497C14C51A74001D8E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001497B14C51A74001D8E38 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8001496714C51A74001D8E38 /* Mission Guru IPAD SW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission Guru IPAD SW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8001496B14C51A74001D8E38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8001496D14C51A74001D8E38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8001496F14C51A74001D8E38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8001497314C51A74001D8E38 /* Mission Guru IPAD SW-Info.plist */ = {isa = PBXFileReference; path = "Mission Guru IPAD SW-Info.plist"; sourceTree = "<group>"; };
+		8001497514C51A74001D8E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8001497714C51A74001D8E38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8001497914C51A74001D8E38 /* Mission Guru IPAD SW-Prefix.pch */ = {isa = PBXFileReference; path = "Mission Guru IPAD SW-Prefix.pch"; sourceTree = "<group>"; };
+		8001497A14C51A74001D8E38 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8001497B14C51A74001D8E38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8001496414C51A74001D8E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8001496C14C51A74001D8E38 /* UIKit.framework in Frameworks */,
+				8001496E14C51A74001D8E38 /* Foundation.framework in Frameworks */,
+				8001497014C51A74001D8E38 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8001495C14C51A74001D8E38 = {
+			isa = PBXGroup;
+			children = (
+				8001497114C51A74001D8E38 /* Mission Guru IPAD SW */,
+				8001496A14C51A74001D8E38 /* Frameworks */,
+				8001496814C51A74001D8E38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8001496814C51A74001D8E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8001496714C51A74001D8E38 /* Mission Guru IPAD SW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8001496A14C51A74001D8E38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8001496B14C51A74001D8E38 /* UIKit.framework */,
+				8001496D14C51A74001D8E38 /* Foundation.framework */,
+				8001496F14C51A74001D8E38 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8001497114C51A74001D8E38 /* Mission Guru IPAD SW */ = {
+			isa = PBXGroup;
+			children = (
+				8001497A14C51A74001D8E38 /* AppDelegate.h */,
+				8001497B14C51A74001D8E38 /* AppDelegate.m */,
+				8001497214C51A74001D8E38 /* Supporting Files */,
+			);
+			path = "Mission Guru IPAD SW";
+			sourceTree = "<group>";
+		};
+		8001497214C51A74001D8E38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8001497314C51A74001D8E38 /* Mission Guru IPAD SW-Info.plist */,
+				8001497414C51A74001D8E38 /* InfoPlist.strings */,
+				8001497714C51A74001D8E38 /* main.m */,
+				8001497914C51A74001D8E38 /* Mission Guru IPAD SW-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8001496614C51A74001D8E38 /* Mission Guru IPAD SW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8001497F14C51A74001D8E38 /* Build configuration list for PBXNativeTarget "Mission Guru IPAD SW" */;
+			buildPhases = (
+				8001496314C51A74001D8E38 /* Sources */,
+				8001496414C51A74001D8E38 /* Frameworks */,
+				8001496514C51A74001D8E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mission Guru IPAD SW";
+			productName = "Mission Guru IPAD SW";
+			productReference = 8001496714C51A74001D8E38 /* Mission Guru IPAD SW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8001495E14C51A74001D8E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8001496114C51A74001D8E38 /* Build configuration list for PBXProject "Mission Guru IPAD SW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8001495C14C51A74001D8E38;
+			productRefGroup = 8001496814C51A74001D8E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8001496614C51A74001D8E38 /* Mission Guru IPAD SW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8001496514C51A74001D8E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8001497614C51A74001D8E38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8001496314C51A74001D8E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8001497814C51A74001D8E38 /* main.m in Sources */,
+				8001497C14C51A74001D8E38 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8001497414C51A74001D8E38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8001497514C51A74001D8E38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8001497D14C51A74001D8E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8001497E14C51A74001D8E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8001498014C51A74001D8E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mission Guru IPAD SW/Mission Guru IPAD SW-Prefix.pch";
+				INFOPLIST_FILE = "Mission Guru IPAD SW/Mission Guru IPAD SW-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8001498114C51A74001D8E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mission Guru IPAD SW/Mission Guru IPAD SW-Prefix.pch";
+				INFOPLIST_FILE = "Mission Guru IPAD SW/Mission Guru IPAD SW-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8001496114C51A74001D8E38 /* Build configuration list for PBXProject "Mission Guru IPAD SW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8001497D14C51A74001D8E38 /* Debug */,
+				8001497E14C51A74001D8E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8001497F14C51A74001D8E38 /* Build configuration list for PBXNativeTarget "Mission Guru IPAD SW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8001498014C51A74001D8E38 /* Debug */,
+				8001498114C51A74001D8E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8001495E14C51A74001D8E38 /* Project object */;
+}
